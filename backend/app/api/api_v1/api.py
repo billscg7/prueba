@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from app.api.api_v1.endpoints import auth, users, projects, layers, elements
+from app.api.api_v1.endpoints import auth, users, projects, layers, elements, nlp
 
 api_router = APIRouter()
 
@@ -10,3 +10,4 @@ api_router.include_router(users.router, prefix="/users", tags=["users"])
 api_router.include_router(projects.router, prefix="/projects", tags=["projects"])
 api_router.include_router(layers.router, prefix="/layers", tags=["layers"])
 api_router.include_router(elements.router, prefix="/elements", tags=["elements"])
+api_router.include_router(nlp.router, prefix="/nlp", tags=["nlp"])
