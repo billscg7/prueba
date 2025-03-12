@@ -1,0 +1,35 @@
+# FastAPI
+fastapi>=0.98.0
+uvicorn>=0.22.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+email-validator>=2.0.0
+
+# Database
+sqlalchemy>=2.0.15
+alembic>=1.11.1
+asyncpg>=0.27.0
+
+# Security
+python-jose>=3.3.0
+passlib>=1.7.4
+python-multipart>=0.0.6
+bcrypt>=4.0.1
+
+# Machine Learning / NLP
+transformers>=4.29.2
+torch>=2.0.1
+# Huggingface bert-base-spanish-wwm-uncased
+sentencepiece>=0.1.99
+
+# Utilities
+python-dotenv>=1.0.0
+httpx>=0.24.1
+tenacity>=8.2.2
+
+# Development
+pytest>=7.3.2
+pytest-asyncio>=0.21.0
+black>=23.3.0
+flake8>=6.0.0
+isort>=5.12.0

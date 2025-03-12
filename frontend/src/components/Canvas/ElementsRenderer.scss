@@ -1,0 +1,60 @@
+.elements-renderer {
+    .element {
+        &.selected {
+            // Estilos para elementos seleccionados
+            stroke-width: 1.5;
+
+            .control-point {
+                fill: #ffffff;
+                stroke: #0066cc;
+                stroke-width: 2;
+                cursor: pointer;
+            }
+
+            .selection-box {
+                stroke: #0066cc;
+                stroke-width: 1;
+                stroke-dasharray: 3, 3;
+                fill: #0066cc;
+                fill-opacity: 0.1;
+            }
+        }
+    }
+
+    // Estilos específicos por tipo de elemento
+    .line-element {
+        line {
+            vector-effect: non-scaling-stroke;
+        }
+    }
+
+    .polyline-element {
+        path {
+            vector-effect: non-scaling-stroke;
+        }
+    }
+
+    .rectangle-element {
+        rect {
+            vector-effect: non-scaling-stroke;
+        }
+    }
+
+    .circle-element {
+        circle {
+            vector-effect: non-scaling-stroke;
+        }
+    }
+
+    .arc-element {
+        path {
+            vector-effect: non-scaling-stroke;
+        }
+    }
+
+    .text-element {
+        text {
+            user-select: none;
+        }
+    }
+}

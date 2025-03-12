@@ -1,0 +1,64 @@
+# Ubicar en la raíz del proyecto: cad-nlp-app/.gitignore
+
+### Global ###
+.DS_Store
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+Thumbs.db
+
+### Backend (Python) ###
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Cache y compilados de Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+celerybeat-schedule
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Bases de datos locales
+*.db
+*.sqlite
+*.sql
+*.dump
+
+# Testing y cobertura
+.coverage
+htmlcov/
+.pytest_cache/
+
+### Frontend (Vite/React) ###
+# Dependencias
+node_modules/
+.cache/
+.vite/
+
+# Builds
+dist/
+dist-ssr/
+*.local
+
+# Paquetería alternativa
+bun.lockb
+pnpm-lock.yaml
+yarn.lock
+
+# Editor/IDE
+.vscode/
+.idea/
+*.code-workspace
+
+### Docker ###
+docker-compose.override.yml
+docker/.env

@@ -1,0 +1,46 @@
+.grid-renderer {
+    pointer-events: none;
+
+    .grid-line {
+        vector-effect: non-scaling-stroke;
+
+        &.minor-line {
+            stroke-width: 0.5;
+        }
+
+        &.major-line {
+            stroke-width: 0.75;
+        }
+    }
+
+    .axis-line {
+        vector-effect: non-scaling-stroke;
+        stroke-width: 1.5;
+
+        &.x-axis {
+            stroke-width: 1.5;
+        }
+
+        &.y-axis {
+            stroke-width: 1.5;
+        }
+    }
+
+    .grid-label {
+        font-family: monospace;
+        font-size: 10px;
+        user-select: none;
+    }
+
+    .origin-point {
+        circle {
+            fill: #000000;
+        }
+
+        text {
+            font-family: monospace;
+            font-size: 10px;
+            user-select: none;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.drawing-canvas-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.drawing-canvas {
+    flex: 1;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+
+    &.dragging {
+        cursor: grabbing;
+    }
+
+    // Cursores según herramienta
+    &.pan {
+        cursor: grab;
+    }
+
+    &.select {
+        cursor: default;
+    }
+
+    &.line,
+    &.polyline,
+    &.rectangle,
+    &.circle,
+    &.arc {
+        cursor: crosshair;
+    }
+
+    &.text {
+        cursor: text;
+    }
+}
+
+.drawing-svg {
+    user-select: none;
+}
